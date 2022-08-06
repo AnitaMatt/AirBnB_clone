@@ -34,7 +34,8 @@ class HBNBCommand(cmd.Cmd):
         return True
 
     def do_EOF(self, line):
-        """Executes the EOF (Ctrl -D/ Ctrl-Z) commands on console"""
+        """Executes the EOF (Ctrl -D/ Ctrl-Z) commands on console
+        """
         print()
         return True
     err_list = err_list = ["** class name missing **",
@@ -43,7 +44,8 @@ class HBNBCommand(cmd.Cmd):
                            "** no instance found **", ]
 
     def emptyline(self):
-        """Response to an empty line input"""
+        """Response to an empty line input
+        """
         pass
 
     def err_msg(self, n):
