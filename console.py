@@ -29,16 +29,22 @@ class HBNBCommand(cmd.Cmd):
     prompt = '(hbnb) '
 
     def do_quit(self, line):
-        """Quit command to exit the program"""
+        """Quit command to exit the program
+        """
         return True
 
     def do_EOF(self, line):
         """Executes the EOF (Ctrl -D/ Ctrl-Z) commands on console"""
+        print()
         return True
     err_list = err_list = ["** class name missing **",
                            "** class doesn't exist **",
                            "** instance id missing **",
                            "** no instance found **", ]
+
+    def emptyline(self):
+        """Response to an empty line input"""
+        pass
 
     def err_msg(self, n):
         """Return error messages"""
