@@ -7,6 +7,7 @@ import models
 
 class BaseModel:
     """Base class for all other models"""
+    
     def __init__(self, *args, **kwargs):
         """initializing the base class and others to follow"""
         if kwargs:
